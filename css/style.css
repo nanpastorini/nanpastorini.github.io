@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.nav li a {
+  font-family: 'Patrick Hand', cursive;
+  color: black;
+  text-decoration: none; }
+
+.form input {
+  padding: 2vh;
+  height: 2.5rem;
+  width: 300px;
+  text-align: center;
+  color: midnightblue;
+  border-style: 5px;
+  margin-top: 2vh;
+  margin-bottom: 2vh; }
+
+.catalogo img, .imagenesGaleria img {
+  max-width: 500px;
+  margin-left: 35vh;
+  margin-bottom: 1vh;
+  padding: 10vh; }
+
+/*Header*/
+.header {
+  grid-area: header;
+  background-color: #000000;
+  padding: 8.05vh;
+  text-align: center; }
+  .header h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25 vh;
+    color: beige; }
+  .header p {
+    padding: 2vh;
+    margin-top: 5vh;
+    font-family: "Gloria Hallelujah", cursive;
+    color: beige; }
+
+/* navegacion */
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .nav ul {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center; }
+  .nav img {
+    width: 250px; }
+  .nav li {
+    list-style: none;
+    padding: 20px;
+    height: 30px; }
+    .nav li:hover {
+      background-color: darksalmon;
+      transform: scale(1.2);
+      transition: 0.5s; }
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  flex-wrap: nowrap; }
+  .footer i {
+    padding: 6vh;
+    font-size: 2.5rem;
+    margin-left: 20%;
+    color: azure; }
+    .footer i:hover {
+      background-color: darkslategrey;
+      transform: scale(1.3);
+      transition: 0.5s; }
+  @media (max-width: 460px) {
+    .footer i {
+      margin-left: 10%;
+      width: 15vw;
+      padding: 3vh; } }
+
+.grilla {
+  display: grid;
+  background-color: lavenderblush;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas: "nav header header header" "nav primeraSeccion primeraSeccion primeraSeccion" "nav segundaSeccion segundaSeccion segundaSeccion" "footer footer footer footer";
+  color: black; }
+
+/* primeraSeccion */
+.primeraSeccion {
+  grid-area: primeraSeccion;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh; }
+  .primeraSeccion h2 {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: "Averia Libre", cursive; }
+  .primeraSeccion p {
+    padding: 3vh;
+    margin: 1 rem;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    font-family: "Nunito", sans-serif; }
+
+/* segundaSeccion */
+.segundaSeccion {
+  grid-area: segundaSeccion;
+  margin-left: 2rem; }
+  .segundaSeccion h3 {
+    text-align: center;
+    padding: 5vh;
+    font-family: "Averia Libre", cursive; }
+  .segundaSeccion img {
+    max-width: 200px;
+    margin-left: 2vh;
+    margin-bottom: 3vh; }
+    .segundaSeccion img:hover {
+      filter: opacity(0.5); }
+  .segundaSeccion div {
+    display: flex;
+    margin-top: 2vh; }
+  .segundaSeccion p {
+    margin-left: 2vh;
+    margin-top: 10vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    font-family: "Nunito", sans-serif; }
+  .segundaSeccion h4 {
+    margin-top: 5vh;
+    text-align: center;
+    font-family: "Averia Libre", cursive; }
+  .segundaSeccion iframe {
+    margin-left: 25vh;
+    margin-top: 10vh;
+    margin-bottom: 3vh; }
+
+@media (max-width: 460px) {
+  .grilla {
+    grid-template-areas: "nav nav nav nav" "header header header header" "primeraSeccion primeraSeccion primeraSeccion primeraSeccion" "segundaSeccion segundaSeccion segundaSeccion segundaSeccion" "footer footer footer footer"; }
+  .primeraSeccion {
+    padding-bottom: 25vh;
+    margin-right: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; }
+  .segundaSeccion {
+    margin-right: 10vh; }
+    .segundaSeccion div {
+      padding-bottom: 15vh;
+      display: flex;
+      margin-top: 2vh;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+    .segundaSeccion img {
+      max-width: 120px;
+      max-height: 120px; }
+    .segundaSeccion iframe {
+      margin-right: 20vh;
+      max-width: 200px;
+      max-height: 200px; } }
+
+.catalogoGrilla {
+  background-color: lavenderblush;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas: "nav header header header" "nav catalogoImagen  catalogoImagen catalogoImagen " "nav  catalogoImagen catalogoImagen catalogoImagen " "footer footer footer footer"; }
+
+.catalogo {
+  grid-area: catalogoImagen;
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh; }
+  .catalogo p {
+    padding: 3vh;
+    text-align: center;
+    font-family: "Averia Libre", cursive; }
+  .catalogo img:hover {
+    transform: scale(1.3);
+    transition: 0.5s; }
+
+@media (max-width: 460px) {
+  .catalogoGrilla {
+    grid-template-areas: "nav nav nav nav" "header header  header header " "catalogoImagen  catalogoImagen catalogoImagen catalogoImagen " "catalogoImagen  catalogoImagen catalogoImagen catalogoImagen " "footer footer footer footer"; }
+  .catalogo {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh; }
+    .catalogo img {
+      max-width: 180px;
+      max-height: 180px;
+      align-items: center;
+      margin-left: 15vh; } }
+
+/* Promociones Bancarias */
+.promobancaria {
+  display: grid;
+  background-color: lavenderblush;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas: "nav header header header" "nav textoPromo textoPromo textoPromo" "nav table table table" "footer footer footer footer"; }
+
+.textoPromo {
+  margin-top: 10vh;
+  min-width: 60vh;
+  grid-area: textoPromo;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 10vh;
+  margin-left: 65vh;
+  margin-right: 50vh; }
+  .textoPromo h1 {
+    font-family: "Averia Libre", cursive; }
+  .textoPromo table {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 15vh;
+    grid-area: table;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh; }
+    .textoPromo table th {
+      border: solid 1px black;
+      padding: 2vh;
+      background-color: cornflowerblue;
+      font-family: "Averia Libre", cursive; }
+    .textoPromo table td {
+      padding: 2vh;
+      border: solid 1px black;
+      background-color: aliceblue;
+      font-family: "Nunito", sans-serif; }
+
+@media (max-width: 460px) {
+  .promobancaria {
+    grid-template-columns: 100vw;
+    grid-template-areas: "nav " "header" "textoPromo  " "table   " "footer ";
+    justify-content: center; }
+  .textoPromo {
+    flex-direction: column;
+    margin-left: 0vh;
+    align-items: center;
+    margin-left: 1vh;
+    margin-right: 10vh;
+    text-align: center; }
+  table {
+    margin-bottom: 0vh;
+    margin-left: 0vh; } }
+
+/* html CONTACTO- Formulario */
+.grillaContacto {
+  display: grid;
+  background-color: lavenderblush;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas: "nav header header header" "nav form form form" "nav form form form" "footer footer footer footer"; }
+
+.form {
+  grid-area: form;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+  margin-left: 50vh; }
+  .form input {
+    background-color: #111;
+    color: #eee; }
+    .form input[type="submit"]:hover {
+      background-color: lavender;
+      color: blue; }
+    .form input:focus {
+      width: 400px;
+      transition: 0.5s;
+      background-color: beige; }
+  .form p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh; }
+
+textarea {
+  width: 300px;
+  background-color: linen;
+  margin-bottom: 2vh;
+  margin: 0 auto; }
+  textarea:focus {
+    width: 400px;
+    transition: 0.5s;
+    background-color: beige; }
+
+@media (max-width: 460px) {
+  .grillaContacto {
+    grid-template-areas: "nav nav nav nav" "header header header header" "form form form form" "form form form form" "footer footer footer footer"; }
+  .form {
+    margin-left: 15vh; } }
+
+.galeria {
+  display: grid;
+  background-color: lavenderblush;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas: "nav header header header" "nav galery galery galery" "nav galery galery galery" "footer footer footer footer"; }
+
+.imagenesGaleria {
+  grid-area: galery;
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh; }
+  .imagenesGaleria p {
+    margin-top: 10vh;
+    text-align: center;
+    font-family: "Averia Libre", cursive; }
+  .imagenesGaleria img:hover {
+    filter: saturate(180%);
+    transform: rotateY(180deg);
+    transform-style: preserve-3d; }
+
+@media (max-width: 460px) {
+  .galeria {
+    grid-template-areas: "nav nav nav nav" "header header  header header " "galery  galery galery galery " "galery  galery galery galery " "footer footer footer footer"; }
+  .imagenesGaleria img {
+    margin-left: 0px; } }

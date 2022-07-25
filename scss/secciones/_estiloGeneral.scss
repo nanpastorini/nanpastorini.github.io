@@ -1,0 +1,86 @@
+/*Header*/
+
+.header {
+  grid-area: header;
+  background-color: $black;
+  padding: 8.05vh;
+  text-align: center;
+  h1 {
+    font-family: $TituloPrincipal;
+    font-size: 25 vh;
+    color: beige;
+  }
+
+  p {
+    padding: 2vh;
+    margin-top: 5vh;
+    font-family: $TituloPrincipal;
+    color: beige;
+  }
+}
+
+/* navegacion */
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  li {
+    list-style: none;
+    padding: 20px;
+    height: 30px;
+    a {
+      @extend %estilosNavegacion;
+    }
+
+    &:hover {
+      background-color: darksalmon;
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: $black;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  flex-wrap: nowrap;
+
+  i {
+    padding: 6vh;
+    font-size: 2.5rem;
+    margin-left: 20%;
+    color: azure;
+
+    &:hover {
+      background-color: darkslategrey;
+      transform: scale(1.3);
+      transition: 0.5s;
+    }
+  }
+  @media (max-width: 460px) {
+    
+    i{
+        margin-left: 10%;
+        width: 15vw;
+        padding: 3vh;
+        
+    }
+  }
+}

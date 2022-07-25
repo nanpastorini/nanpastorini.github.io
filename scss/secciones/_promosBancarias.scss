@@ -1,0 +1,76 @@
+/* Promociones Bancarias */
+
+.promobancaria {
+  display: grid;
+  background-color: lavenderblush;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas:
+    "nav header header header"
+    "nav textoPromo textoPromo textoPromo"
+    "nav table table table"
+    "footer footer footer footer";
+}
+.textoPromo {
+  margin-top: 10vh;
+  min-width: 60vh;
+  grid-area: textoPromo;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 10vh;
+  margin-left: 65vh;
+  margin-right: 50vh;
+  h1 {
+    font-family: $Averia;
+  }
+  table {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 15vh;
+    grid-area: table;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh;
+    th {
+      border: solid 1px black;
+      padding: 2vh;
+      background-color: cornflowerblue;
+      font-family: $Averia;
+    }
+    td {
+      padding: 2vh;
+      border: solid 1px black;
+      background-color: aliceblue;
+      font-family: $TextoGeneral;
+    }
+  }
+}
+
+
+@media (max-width: 460px) {
+  .promobancaria{
+    
+    grid-template-columns: 100vw ;
+    grid-template-areas:
+    "nav "
+    "header"
+    "textoPromo  "
+    "table   "
+    "footer ";
+    justify-content: center;
+  }
+  .textoPromo{
+    flex-direction: column;
+    margin-left: 0vh;
+    align-items: center;
+    margin-left: 1vh;
+    margin-right: 10vh;
+    text-align: center;
+  }
+  table{
+    margin-bottom: 0vh;
+    margin-left: 0vh;
+  }
+
+}

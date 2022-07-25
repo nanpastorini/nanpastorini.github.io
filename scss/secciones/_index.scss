@@ -1,0 +1,126 @@
+.grilla {
+  display: grid;
+  background-color: lavenderblush;
+  grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+  grid-template-areas:
+    "nav header header header"
+    "nav primeraSeccion primeraSeccion primeraSeccion"
+    "nav segundaSeccion segundaSeccion segundaSeccion"
+    "footer footer footer footer";
+  color: black;
+}
+
+/* primeraSeccion */
+
+.primeraSeccion {
+  grid-area: primeraSeccion;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+
+  h2 {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: $Averia;
+  }
+
+  p {
+    padding: 3vh;
+    margin: 1 rem;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    font-family: $TextoGeneral;
+  }
+}
+/* segundaSeccion */
+
+.segundaSeccion {
+  grid-area: segundaSeccion;
+  margin-left: 2rem;
+
+  h3 {
+    text-align: center;
+    padding: 5vh;
+    font-family: $Averia;
+  }
+
+  img {
+    max-width: 200px;
+    margin-left: 2vh;
+    margin-bottom: 3vh;
+    &:hover {
+      filter: opacity(0.5);
+    }
+  }
+
+  div {
+    display: flex;
+    margin-top: 2vh;
+  }
+
+  p {
+    margin-left: 2vh;
+    margin-top: 10vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    font-family: $TextoGeneral;
+  }
+
+  h4 {
+    margin-top: 5vh;
+    text-align: center;
+    font-family: $Averia;
+  }
+
+  iframe {
+    margin-left: 25vh;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+  }
+}
+
+//Media Query
+
+@media (max-width: 460px) {
+  .grilla {
+    grid-template-areas:
+      "nav nav nav nav"
+      "header header header header"
+      "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+      "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+      "footer footer footer footer";
+  }
+  .primeraSeccion {
+    padding-bottom: 25vh;
+    margin-right: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .segundaSeccion {
+    margin-right: 10vh;
+    div {
+      padding-bottom: 15vh;
+      display: flex;
+      margin-top: 2vh;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    img {
+      max-width: 120px;
+      max-height: 120px;
+    }
+
+     iframe {
+        margin-right: 20vh;
+       max-width: 200px;
+       max-height: 200px;
+    }
+  }
+}

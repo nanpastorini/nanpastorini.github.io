@@ -1,0 +1,20 @@
+//RESET
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//import variables
+@import "../variables/colores";
+@import "../variables/tipografias.scss";
+@import "../variables/extend.scss";
+
+
+
+//import secciones
+@import "./secciones/estiloGeneral.scss";
+@import "./secciones/index.scss";
+@import "./secciones/catalogo.scss";
+@import "./secciones/promosBancarias.scss";
+@import "./secciones/contacto.scss";
+@import "./secciones/galeria.scss"

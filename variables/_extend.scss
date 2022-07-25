@@ -1,0 +1,32 @@
+//EXTEND 
+%estilosNavegacion{
+    font-family: 'Patrick Hand', cursive;
+    color:black;
+    text-decoration: none;
+}
+//input de formulario de contacto
+%input{
+    padding: 2vh;
+    height: 2.5rem;
+    width: 300px;
+    text-align: center;
+    color: midnightblue;
+    border-style: 5px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;}
+//Imagenes de galeria y catalogo 
+%img{
+    max-width: 500px;
+        margin-left: 35vh;
+        margin-bottom: 1vh;
+        padding: 10vh;
+}    
+
+
+
+//Mixin 
+
+@mixin styless($color) {
+    background-color: $color;
+    color: #eee;
+}

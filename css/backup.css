@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grilla{
+
+    display: grid;
+    background-color:lavenderblush;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas: "nav header header header"
+                         "nav primeraSeccion primeraSeccion primeraSeccion"
+                         "nav segundaSeccion segundaSeccion segundaSeccion"
+                         "footer footer footer footer"
+    ;
+    color: blue;
+}
+
+/* navegacion */
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav ul{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+.nav img{
+    width: 250px;
+}
+.nav li{
+    list-style: none;
+    padding: 20px;
+    height: 30px;
+}
+.nav a{
+    color: darkblue;
+    text-decoration: none;
+}
+.nav li:hover{
+    background-color: darksalmon;
+    transform: scale(1.2);
+    transition: .5s;
+}
+.nav img:hover {filter: blur(5px);}
+/* header */
+.header{
+    grid-area: header;
+    background-color: rgb(245, 173, 139);
+    color: black;
+    padding-top: 70px;
+    padding-bottom: 14px;
+    text-align: center;
+    background: rgb(218,220,227);
+    background: radial-gradient(circle, rgba(218,220,227,1) 0%, rgba(231,131,151,1) 100%);
+}
+.header p {
+    padding: 2vh;
+    margin-top: 5vh;
+}
+
+/* primeraSeccion */
+.primeraSeccion{
+    grid-area: primeraSeccion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+    
+}
+.primeraSeccion p {
+    padding: 3vh;
+    margin: 1 rem;
+}
+.primeraSeccion h2{
+    margin-top: 2vh;
+}
+/* segundaSeccion */
+.segundaSeccion{
+    grid-area: segundaSeccion;
+    margin-left: 2rem;
+}
+.segundaSeccion h3{
+    text-align: center;
+}
+.segundaSeccion img{
+    max-width: 200px;
+    margin-left: 2vh;
+    margin-bottom: 3vh;
+}
+
+.segundaSeccion div{
+    display: flex;
+    margin-top: 2vh;
+}
+.segundaSeccion p{
+    margin-left: 2vh;
+    margin-top: 10vh;
+}
+.segundaSeccion img{
+    transform: skew(-10deg);
+    transition: skew 3s;
+}
+.segundaSeccion img:hover{
+    transform: scale(-1.2);
+}
+/* Footer */
+.footer{
+    background-color:cornflowerblue;
+    grid-area: footer;
+    display: flex;
+    flex-direction:row;
+    height: 20vh;
+    flex-wrap: nowrap;
+    background: rgb(218,220,227);
+    background: radial-gradient(circle, rgba(218,220,227,1) 0%, rgba(131,166,231,1) 100%);
+}
+.footer i{
+    padding: 6vh;
+    font-size: 2.5rem;
+    margin-left: 20%;   
+}
+
+.footer i:hover{
+    background-color:darkslategrey;
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+/* html CONTACTO- Formulario */
+
+.grillaContacto{
+    display: grid;
+    background-color:lavenderblush;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas: "nav header header header"
+                         "nav form form form"
+                         "nav form form form"
+                         "footer footer footer footer"
+}
+
+.form{
+    grid-area: form;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form textarea{
+    width: 300px;
+    background-color: linen;
+    margin-bottom: 2vh;
+    margin: 0 auto;
+
+}
+.form div{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+.form p{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.form input{
+    height: 2.5rem;
+    width: 300px;
+    text-align: center;
+    border-style: 5px;
+    background-color: lightcyan;
+    margin: 0 auto;
+}
+.form input[type=submit]:hover{
+    background-color: lavender;
+    color: blue;
+
+}
+.form input:focus{
+    width: 400px;
+    transition: .5s;
+    background-color: beige;
+}
+.form textarea:focus{
+    width: 400px;
+    transition: .5s;
+    background-color: beige;
+
+}
+/* Promociones Bancarias */
+
+.promobancaria{
+    display: grid;
+    background-color:lavenderblush;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas: "nav header header header"
+                         "nav textoPromo textoPromo textoPromo"
+                         "nav table table table"
+                         "footer footer footer footer"
+
+}
+.textoPromo{
+    margin-top: 10vh;
+    min-width: 60vh;
+    grid-area: textoPromo;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 10vh;
+    margin-left: 65vh;
+    margin-right: 50vh;
+}
+.table{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 15vh;
+    grid-area: table;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh;
+    
+}
+
+.table th {
+    border: solid 1px black;
+    padding: 2vh;
+    background-color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table td {
+    padding: 2vh;
+    border: solid 1px black;
+    background-color: aliceblue;
+}
+/* catalogo */
+.catalogoGrilla{
+    background-color:lavenderblush;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas: "nav header header header"
+                         "nav catalogoImagen  catalogoImagen catalogoImagen "
+                         "nav  catalogoImagen catalogoImagen catalogoImagen "
+                         "footer footer footer footer"
+
+}
+
+.catalogo{
+    grid-area: catalogoImagen;
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh; 
+}
+
+.catalogo img {
+    max-width: 200px;
+    margin-left: 8vh;
+    margin-bottom: 1vh;
+    padding: 10vh;
+
+}
+
+.catalogo p{
+    margin-left: 10vh;
+}
+
+.catalogo img:hover {
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+
+/* MediaQuery */
+@media (max-width: 460px){
+    .grilla{
+        grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion" 
+        "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+        "footer footer footer footer"
+        ;
+    }
+    .grillaContacto{
+        grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "form form form form  " 
+        "form form form form   "
+        "footer footer footer footer"
+    }
+
+    .primeraSeccion{
+        flex-direction: row;
+    }
+    .segundaSeccion{
+        flex-direction: row;
+    }
+    .segundaSeccion div{
+        margin-bottom: 3rem;
+    }
+    .nav ul{
+        display: flex;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer i{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem; 
+        padding: 2%;
+    }
+}
