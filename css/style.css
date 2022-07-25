@@ -91,7 +91,7 @@
   display: grid;
   background-color: lavenderblush;
   grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
-  grid-template-areas: "nav header header header" "nav primeraSeccion primeraSeccion primeraSeccion" "nav segundaSeccion segundaSeccion segundaSeccion" "footer footer footer footer";
+  grid-template-areas: "nav header header header" "nav primeraSeccion primeraSeccion primeraSeccion" "nav segundaSeccion segundaSeccion segundaSeccion" "footer footer footer footer";
   color: black; }
 
 /* primeraSeccion */
@@ -146,7 +146,7 @@
 
 @media (max-width: 460px) {
   .grilla {
-    grid-template-areas: "nav nav nav nav" "header header header header" "primeraSeccion primeraSeccion primeraSeccion primeraSeccion" "segundaSeccion segundaSeccion segundaSeccion segundaSeccion" "footer footer footer footer"; }
+    grid-template-areas: "nav nav nav nav" "header header header header" "primeraSeccion primeraSeccion primeraSeccion primeraSeccion" "segundaSeccion segundaSeccion segundaSeccion segundaSeccion" "footer footer footer footer"; }
   .primeraSeccion {
     padding-bottom: 25vh;
     margin-right: 10vh;
@@ -177,7 +177,7 @@
   background-color: lavenderblush;
   display: grid;
   grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
-  grid-template-areas: "nav header header header" "nav catalogoImagen  catalogoImagen catalogoImagen " "nav  catalogoImagen catalogoImagen catalogoImagen " "footer footer footer footer"; }
+  grid-template-areas: "nav header header header" "nav catalogoImagen  catalogoImagen catalogoImagen " "nav  catalogoImagen catalogoImagen catalogoImagen " "footer footer footer footer"; }
 
 .catalogo {
   grid-area: catalogoImagen;
@@ -194,7 +194,7 @@
 
 @media (max-width: 460px) {
   .catalogoGrilla {
-    grid-template-areas: "nav nav nav nav" "header header  header header " "catalogoImagen  catalogoImagen catalogoImagen catalogoImagen " "catalogoImagen  catalogoImagen catalogoImagen catalogoImagen " "footer footer footer footer"; }
+    grid-template-areas: "nav nav nav nav" "header header  header header " "catalogoImagen  catalogoImagen catalogoImagen catalogoImagen " "catalogoImagen  catalogoImagen catalogoImagen catalogoImagen " "footer footer footer footer"; }
   .catalogo {
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@
   display: grid;
   background-color: lavenderblush;
   grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
-  grid-template-areas: "nav header header header" "nav textoPromo textoPromo textoPromo" "nav table table table" "footer footer footer footer"; }
+  grid-template-areas: "nav header header header" "nav textoPromo textoPromo textoPromo" "nav table table table" "footer footer footer footer"; }
 
 .textoPromo {
   margin-top: 10vh;
@@ -247,7 +247,7 @@
 @media (max-width: 460px) {
   .promobancaria {
     grid-template-columns: 100vw;
-    grid-template-areas: "nav " "header" "textoPromo  " "table   " "footer ";
+    grid-template-areas: "nav " "header" "textoPromo  " "table   " "footer ";
     justify-content: center; }
   .textoPromo {
     flex-direction: column;
@@ -265,7 +265,7 @@
   display: grid;
   background-color: lavenderblush;
   grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
-  grid-template-areas: "nav header header header" "nav form form form" "nav form form form" "footer footer footer footer"; }
+  grid-template-areas: "nav header header header" "nav form form form" "nav form form form" "footer footer footer footer"; }
 
 .form {
   grid-area: form;
@@ -303,9 +303,9 @@ textarea {
 
 @media (max-width: 460px) {
   .grillaContacto {
-    grid-template-areas: "nav nav nav nav" "header header header header" "form form form form" "form form form form" "footer footer footer footer"; }
+    grid-template-areas: "nav nav nav nav" "header header header header" "form form form form" "form form form form" "footer footer footer footer"; }
   .form {
-    margin-left: 15vh; } }
+    margin-left: 5vh; } }
 
 .galeria {
   display: grid;
